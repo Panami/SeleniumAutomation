@@ -38,7 +38,6 @@ public class Brokenlinks {
 		for (WebElement link : links) {
 
 			String url = link.getAttribute("href");
-			System.out.println("url");
 			
 
 			HttpURLConnection conn = (HttpURLConnection) new URL(url).openConnection();
