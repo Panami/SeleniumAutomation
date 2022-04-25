@@ -24,7 +24,7 @@ public class Base {
 			
 		{
 			String name=products.get(i).getText();
-			if(name.contains("Cucumber "))
+			if(name.contains("Cucumber"))
 			{
 				//click on add to cart
 				driver.findElements(By.xpath("//button[text()='ADD TO CART']")).get(i).click();

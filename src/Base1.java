@@ -25,8 +25,8 @@ public class Base1 {
 		for(int i=0;i<products.size();i++)
 		{
 			String name=products.get(i).getText();
-			//converting arry into arry list for easty search
-			//check wether name you extracted is present in arrylist or not
+			//converting arry into arry list for easy search
+			//check whether name you extracted is present in arrylist or not
 			
 			List itemsNeededList = Arrays.asList(itemsNeeded);
 			if (itemsNeededList.contains(name))

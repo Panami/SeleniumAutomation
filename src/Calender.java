@@ -18,7 +18,8 @@ public class Calender {
 		//August 23
 		driver.findElement(By.id("travel_date")).click();
 		
-		while(!driver.findElement(By.cssSelector("[class='datepicker-days'] [class='datepicker-switch']")).getText().contains("August"))
+		while(!driver.findElement(By.cssSelector("[class='datepicker-days'] [class='datepicker-switch']"))
+				.getText().contains("August"))
 		{
 			driver.findElement(By.cssSelector("[class='datepicker-days'] [class='next']")).click();
 		}

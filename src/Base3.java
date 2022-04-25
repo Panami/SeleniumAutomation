@@ -19,7 +19,7 @@ public class Base3 {
 		WebDriver driver = new ChromeDriver();
 		//implicit wait
 		//driver.manage().timeouts().implicitlyWait(5,TimeUnit.SECONDS);
-		WebDriverWait w = new WebDriverWait(driver,5);
+		WebDriverWait w = new WebDriverWait(driver,5);	
 		
 	String[] itemsNeeded={"Cucumber","Brocolli","Beetroot","Carrot"};
 		

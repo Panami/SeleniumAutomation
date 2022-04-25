@@ -1,4 +1,6 @@
 import java.awt.List;
+import java.io.IOException;
+import java.net.MalformedURLException;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -9,7 +11,7 @@ import org.testng.Assert;
 
 public class e2e {
 
-	public static void main(String[] args) throws InterruptedException {
+	public static void main(String[] args) throws MalformedURLException, IOException,  InterruptedException {
 		// TODO Auto-generated method stub
 		
 		System.setProperty("webdriver.chrome.driver", "C:\\Users\\sangamesh\\Documents\\chromedriver.exe");

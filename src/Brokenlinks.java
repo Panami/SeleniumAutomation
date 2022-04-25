@@ -14,6 +14,8 @@ import org.testng.asserts.SoftAssert;
 
 public class Brokenlinks {
 
+	private static HttpURLConnection HttpURLconnection;
+
 	public static void main(String[] args) throws MalformedURLException, IOException {
 		// TODO Auto-generated method stub
 
@@ -45,6 +47,7 @@ public class Brokenlinks {
 			conn.connect();
 			int respCode = conn.getResponseCode();
 
+		
 			System.out.println(respCode);
 			a.assertTrue(respCode < 400, "the link with text" + link.getText() + "is broken ith code" + respCode);
 
@@ -54,3 +57,5 @@ public class Brokenlinks {
 	}
 
 }
+
+		
