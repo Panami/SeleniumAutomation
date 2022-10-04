@@ -6,7 +6,7 @@ public class AlertAssignment {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		
+
 		String text = "preeti";
 		System.setProperty("webdriver.chrome.driver", "C:\\Users\\sangamesh\\Documents\\chromedriver.exe");
 		WebDriver driver = new ChromeDriver();
@@ -21,13 +21,7 @@ public class AlertAssignment {
 		driver.findElement(By.id("confirmbtn")).click();
 		System.out.println(driver.switchTo().alert().getText());
 		driver.switchTo().alert().dismiss();
-		
-	
-		
-		
-		
-		
-		
+
 	}
 
 }

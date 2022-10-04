@@ -7,10 +7,9 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 public class AutoSuggestivDropdown {
 
-	public static void main(String[] args) throws InterruptedException{
+	public static void main(String[] args) throws InterruptedException {
 		// TODO Auto-generated method stub
-		
-		
+
 		System.setProperty("webdriver.chrome.driver", "C:\\Users\\sangamesh\\Documents\\chromedriver.exe");
 		WebDriver driver = new ChromeDriver();
 		driver.manage().window().maximize();
@@ -19,20 +18,16 @@ public class AutoSuggestivDropdown {
 		driver.findElement(By.id("proceed-link")).click();
 		driver.findElement(By.id("autosuggest")).sendKeys("ind");
 		Thread.sleep(3000);
-		List<WebElement> options =driver.findElements(By.cssSelector("li[class='ui-menu-item'] a"));
-		
-		for(WebElement option :options)
-		{
-			if(option.getText().equalsIgnoreCase("India"))
-					{
+		List<WebElement> options = driver.findElements(By.cssSelector("li[class='ui-menu-item'] a"));
+
+		for (WebElement option : options) {
+			if (option.getText().equalsIgnoreCase("India")) {
 				option.click();
 				break;
-						
-					}
+
+			}
 		}
-		
-		
-		
+
 	}
 
 }

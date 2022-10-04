@@ -18,27 +18,17 @@ public class Assignment6 {
 		driver.findElement(By.xpath("//div[@id='checkbox-example']/fieldset/label[2]/input")).click();
 		String abc = driver.findElement(By.xpath("//div[@id='checkbox-example']/fieldset/label[2]")).getText();
 		WebElement dropDown = driver.findElement(By.id("dropdown-class-example"));
-		Select s=new Select(dropDown);
+		Select s = new Select(dropDown);
 		s.selectByVisibleText(abc);
 		driver.findElement(By.name("enter-name")).sendKeys(abc);
 		driver.findElement(By.id("alertbtn")).click();
 		String alertbtn = driver.switchTo().alert().getText();
-		if(alertbtn.contains(abc))
-		{
+		if (alertbtn.contains(abc)) {
 			System.out.println("alertbtn success");
-		}
-		else
-		{
+		} else {
 			System.out.println("alertbtn fail");
 		}
 
-			
 	}
-	
+
 }
-			
-			
-
-
-
-

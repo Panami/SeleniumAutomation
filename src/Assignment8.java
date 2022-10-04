@@ -20,10 +20,7 @@ public class Assignment8 {
 		driver.findElement(By.id("autocomplete")).sendKeys(Keys.DOWN);
 		driver.findElement(By.id("autocomplete")).sendKeys(Keys.DOWN);
 		System.out.println(driver.findElement(By.id("autocomplete")).getAttribute("value"));
-		
-		
-		
-		
+
 	}
 
 }

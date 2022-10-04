@@ -14,11 +14,7 @@ public class Navigation {
 		driver.navigate().forward();
 		driver.navigate().back();
 		driver.navigate().refresh();
-		
-		
-		
-		
+
 	}
-	
 
 }

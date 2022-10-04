@@ -8,7 +8,7 @@ public class Assignment2 {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		
+
 		System.setProperty("webdriver.chrome.driver", "C:\\Users\\sangamesh\\Documents\\chromedriver.exe");
 		WebDriver driver = new ChromeDriver();
 		driver.manage().window().maximize();
@@ -20,14 +20,13 @@ public class Assignment2 {
 		driver.findElement(By.id("exampleInputPassword1")).sendKeys("rahul123");
 		driver.findElement(By.id("exampleCheck1")).click();
 		WebElement Dropdown = driver.findElement(By.id("exampleFormControlSelect1"));
-		Select dropdown =new Select (Dropdown);
+		Select dropdown = new Select(Dropdown);
 		dropdown.selectByVisibleText("Male");
 		System.out.println(dropdown.getFirstSelectedOption().getText());
 		driver.findElement(By.id("inlineRadio1")).click();
 		driver.findElement(By.name("bday")).sendKeys("01/01/1994");
 		driver.findElement(By.cssSelector("input[type='submit']")).click();
-		
-		
+
 	}
 
 }

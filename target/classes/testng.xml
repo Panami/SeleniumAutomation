@@ -1,0 +1,8 @@
+<suite name="default package">
+	<test name="testngTest">
+		<classes>
+			<class name="default package.testngxample2" />
+			<class name="default package.testngexample1" />
+		</classes>
+	</test>
+</suite>

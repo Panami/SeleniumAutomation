@@ -40,14 +40,12 @@ public class Brokenlinks {
 		for (WebElement link : links) {
 
 			String url = link.getAttribute("href");
-			
 
 			HttpURLConnection conn = (HttpURLConnection) new URL(url).openConnection();
 			conn.setRequestMethod("HEAD");
 			conn.connect();
 			int respCode = conn.getResponseCode();
 
-		
 			System.out.println(respCode);
 			a.assertTrue(respCode < 400, "the link with text" + link.getText() + "is broken ith code" + respCode);
 
@@ -57,5 +55,3 @@ public class Brokenlinks {
 	}
 
 }
-
-		
