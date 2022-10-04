@@ -1,0 +1,65 @@
+1)What is Java explain?
+java is widley used object oriented programing language and software platform & secure programming language.
+Features of Java?
+Simple
+Java is very easy to learn, and its syntax is simple, clean and easy to understand.
+Object-oriented
+Java is an object-oriented
+programming language. Everything in Java is an object. Object-oriented means we organize our software as a combination of different types of objects that incorporate both data and behavior.
+Platform Independent
+Java is platform independent
+Java is platform independent because it is different from other languages like C
+, C++
+, etc. which are compiled into platform specific machines while Java is a write once, run anywhere language. A platform is the hardware or software environment in which a program runs.
+Java code can be executed on multiple platforms, for example, Windows, Linux, Sun Solaris, Mac/OS, etc. Java code is compiled by the compiler and converted into bytecode. This bytecode is a platform-independent code because it can be run on multiple platforms, i.e., Write Once and Run Anywhere (WORA).
+Secured
+Java is best known for its security. With Java, we can develop virus-free systems. Java is secured because:
+
+No explicit pointer
+Java Programs run inside a virtual machine sandbox
+Robust
+The English mining of Robust is strong. Java is robust because:
+
+It uses strong memory management.
+There is a lack of pointers that avoids security problems.
+Java provides automatic garbage collection which runs on the Java Virtual Machine to get rid of objects which are not being used by a Java application anymore.
+Portable
+Java is portable because it facilitates you to carry the Java bytecode to any platform. It doesn't require any implementation.
+Multi-threaded
+A thread is like a separate program, executing concurrently. We can write Java programs that deal with many tasks at once by defining multiple threads. The main advantage of multi-threading is that it doesn't occupy memory for each thread. It shares a common memory area. Threads are important for multi-media, Web applications, etc.
+
+2)Data Types in Java?
+Primitive data types: The primitive data types include boolean, char, byte, short, int, long, float and double.
+Non-primitive data types: The non-primitive data types include Classes, Interfaces, araaylist, String, hashmap and Arrays .1)What is Java explain?
+java is widley used object oriented programing language and software platform & secure programming language.
+Features of Java?
+Simple
+Java is very easy to learn, and its syntax is simple, clean and easy to understand.
+Object-oriented
+Java is an object-oriented
+programming language. Everything in Java is an object. Object-oriented means we organize our software as a combination of different types of objects that incorporate both data and behavior.
+Platform Independent
+Java is platform independent
+Java is platform independent because it is different from other languages like C
+, C++
+, etc. which are compiled into platform specific machines while Java is a write once, run anywhere language. A platform is the hardware or software environment in which a program runs.
+Java code can be executed on multiple platforms, for example, Windows, Linux, Sun Solaris, Mac/OS, etc. Java code is compiled by the compiler and converted into bytecode. This bytecode is a platform-independent code because it can be run on multiple platforms, i.e., Write Once and Run Anywhere (WORA).
+Secured
+Java is best known for its security. With Java, we can develop virus-free systems. Java is secured because:
+
+No explicit pointer
+Java Programs run inside a virtual machine sandbox
+Robust
+The English mining of Robust is strong. Java is robust because:
+
+It uses strong memory management.
+There is a lack of pointers that avoids security problems.
+Java provides automatic garbage collection which runs on the Java Virtual Machine to get rid of objects which are not being used by a Java application anymore.
+Portable
+Java is portable because it facilitates you to carry the Java bytecode to any platform. It doesn't require any implementation.
+Multi-threaded
+A thread is like a separate program, executing concurrently. We can write Java programs that deal with many tasks at once by defining multiple threads. The main advantage of multi-threading is that it doesn't occupy memory for each thread. It shares a common memory area. Threads are important for multi-media, Web applications, etc.
+
+2)Data Types in Java?
+Primitive data types: The primitive data types include boolean, char, byte, short, int, long, float and double.
+Non-primitive data types: The non-primitive data types include Classes, Interfaces, araaylist, String, hashmap and Arrays .

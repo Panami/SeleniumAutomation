@@ -1,0 +1,68 @@
+day-10
+-------
+Arraylist
+Hashmap
+JDBC
+-----------
+
+
+Derived data type (collections)       
+
+
+Arraylist
+-----------
+int a[]=new int a[5];
+
+operations on arraylist
+------------------
+how to declare an array list
+how to add elements/values to array list
+find the size of array list
+remove elements/values from array list
+insert a new element in middle of array list
+read the value from array list
+
+
+
+int a[]=new int[5];
+object a[]= new object[5];
+
+
+HashMap
+--------
+declare HashMap
+add element to hashmap
+remove element from hashmap
+read pairs of hashmap
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

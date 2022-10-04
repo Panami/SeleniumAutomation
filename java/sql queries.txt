@@ -1,0 +1,492 @@
+sql queries
+
+
+
+SELECT * FROM patients;
+
+select first_name, last_name from patients;
+
+select COunt(distinct city) from patients;
+
+select * from patients
+where city = "Hamilton";
+
+select * from patients
+where height < 172;
+
+select * from patients
+where height between 100 and 150;
+
+select * from patients
+where first_name like "El%"
+
+select * from patients
+where city in ("Hamilton", "Toranto");
+
+select * from patients
+where city = "Hamilton" and height = 144;
+
+select * from patients
+where city = "Hamilton" or height = 144;
+
+select * from patients
+where city = "Hamilton" and height != 144;
+
+select * from patients
+where NOT city = "Hamilton";
+
+select * from patients
+where city = "Hamilton" and (height = 144 OR height = 152);
+
+select * from patients
+where NOT city = "Hamilton" and NOT height = 144;
+
+select * from patients
+where city = "Hamilton" and (height = 144 and weight < 94);
+
+select * from patients
+order by first_name asc;
+
+select * from patients
+order by first_name desc;
+
+select * from patients
+order by first_name desc, last_name asc;
+/	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+INSERT INTO patients (first_name, last_name, gender, birth_date, city, province_id, allergies, weight, height)
+VALUES ('John', 'Smith', 'M', '1994-02-21', 'Hamilton','ON', 'NKA', 132, 182);
+
+select * from patients
+where patient_id = (select max(patient_id) from patients);
+    
+INSERT INTO patients (first_name, last_name, gender)
+VALUES ('Jane', 'Doe','F');
+    
+SELECT * FROM patients
+WHERE allergies IS NULL
+
+SELECT * FROM patients
+WHERE allergies IS NOT NULL
+
+update patients
+set gender = "F"
+where patient_id = 1;
+
+UPDATE patients
+SET gender = "F";
+
+update patients
+set gender = "F", city = "Carisle"
+where patient_id = 1;
+
+DELETE FROM patients WHERE first_name = 'Paul';
+
+SELECT * FROM patients
+LIMIT 3;
+
+SELECT MIN(weight) FROM patients;
+
+SELECT first_name, MIN(height) AS Short_person
+FROM patients
+WHERE patient_id in (1,5);
+
+SELECT MAX(weight) FROM patients;
+
+SELECT COUNT(city)
+FROM patients
+WHERE city = "Hamilton";
+
+SELECT COUNT(patient_id)
+FROM patients
+
+SELECT avg(height)
+from patients
+
+SELECT avg(height)
+from patients
+where city = "Hamilton"
+
+SELECT sum(height)
+from patients
+where city = "Hamilton"
+
+SELECT * FROM patients
+WHERE first_name LIKE 'a%';
+
+SELECT * FROM patients
+WHERE first_name LIKE '%b';
+
+SELECT * FROM patients
+WHERE first_name LIKE '%ora%';
+
+SELECT * FROM patients
+WHERE first_name LIKE '_a%';
+
+SELECT * FROM patients
+WHERE first_name LIKE 'a_%';
+
+SELECT * FROM patients
+WHERE first_name LIKE 'a___%';
+
+SELECT * FROM patients
+WHERE first_name LIKE 'a%o';
+
+select first_name as fname, last_name as lname from patients;
+
+SELECT unit_dose_orders.unit_dose_order_id, patients.first_name, unit_dose_orders.entered_date
+FROM unit_dose_orders
+INNER JOIN patients ON unit_dose_orders.patient_id = patients.patient_id;
+
+SELECT unit_dose_orders.unit_dose_order_id, patients.first_name, unit_dose_orders.entered_date
+FROM unit_dose_orders
+LEFT JOIN patients ON unit_dose_orders.patient_id = patients.patient_id;
+
+SELECT unit_dose_orders.unit_dose_order_id, patients.first_name, unit_dose_orders.entered_date
+FROM unit_dose_orders
+RIGHT JOIN patients ON unit_dose_orders.patient_id = patients.patient_id;
+
+SELECT unit_dose_orders.unit_dose_order_id, patients.first_name, unit_dose_orders.entered_date
+FROM unit_dose_orders
+FULL OUTER JOIN patients ON unit_dose_orders.patient_id = patients.patient_id;
+
+SELECT A.CustomerName AS CustomerName1, B.CustomerName AS CustomerName2, A.City
+FROM Customers A, Customers B
+WHERE A.CustomerID <> B.CustomerID
+AND A.City = B.City
+ORDER BY A.City;
+
+SELECT City FROM Customers
+UNION
+SELECT City FROM Suppliers
+ORDER BY City;
+
+SELECT City FROM Customers
+UNION ALL
+SELECT City FROM Suppliers
+ORDER BY City;
+
+SELECT COUNT(CustomerID), Country
+FROM Customers
+GROUP BY Country;

@@ -1,0 +1,82 @@
+day--4
+---------
+Java Arrays & Strings
+-----------------------
+Array:it is collection of element of same data type.
+
+2types of array
+-------------------
+1. single dimensional array
+2. two/multi dimensional array
+
+1.single dimensional array
+----------------------
+1.Declare an array
+2.insert values into array
+3.how to find the siez of an array
+4.how to read vaule from an array
+
+
+
+int a[]=new int[5];  //int []a=new int[5];
+
+
+clasic for loop
+---------------
+for(initilization;condition;incrementation)
+{
+statements;
+}
+
+
+
+Advanced for loop/Enhanced for loop/for each loop
+-------------------------
+for(initilization)
+{
+statements;
+}
+
+
+2. two/multi dimensional array
+--------------------
+1.Declare an array
+2.insert values into array
+3.how to find the siez of an array
+4.how to read vaule from an array
+
+
+int a[][]=new int[3][2];    // int [][]a=new int[3][2];  
+3->row    2->columns
+
+
+
+String is colection of characters
+
+String s="Welcome" 
+
+string methods
+-----------
+length()
+concat()
+trim()
+contains()
+equals()
+equalsIgnoreCase()
+replace()
+toLowerCase()
+toUpperCase()
+
+
+
+
+
+
+
+
+
+
+
+
++
+

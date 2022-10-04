@@ -1,0 +1,29 @@
+Day-6
+---------
+over loading
+this keyword
+static variabls & static method
+----------------
+
+overloading: creating methods/constructors with the same name with diffarent parameters
+
+Advantage:
+----------
+saves memory
+saves time
+
+1)number of parameters
+2)data type of parameters
+
+constrauctor overloading
+
+this keyword
+
+static-->applicable for variables and methods
+
+static variables
+static methods
+---------------
+1)static method can access only static stuff(directly- without creating an object)
+2)static method can also access non static stuff but through object
+3)non static methods can access both static and non static stuff directly

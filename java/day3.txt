@@ -1,0 +1,139 @@
+Day-3
+----------
+
+Java control statament
+-------------------
+Conditional statament(selection statament)
+Loops/Itirative statament
+Jump statament
+
+
+Conditional statament
+--------------------
+
+if..else
+-------
+
+	
+if(condition)
+{
+  stataments;
+}
+else
+{
+  stataments;
+}
+
+
+Nested if..else
+------------
+ if(condition)
+{
+ stataments;
+}
+ else if(condition1)
+{
+ stataments;
+}
+ else if(condition2)
+{
+ stataments;
+}
+ else
+{
+ stataments;
+}
+
+
+switch case
+--------------
+switch(expression)
+{
+case <condition1>: stataments; break;
+case <condition2>: stataments; break;
+case <condition3>: stataments; break;
+default:stataments;
+}
+
+
+Loop: set of statament/s can be repeated multiple times based on condition.
+
+while
+do..while
+for loop
+
+
+
+while loop
+----------
+while(condition)
+{
+ stataments;
+}
+
+
+do..while
+---------
+do
+{
+statament;
+}
+while(condition);
+
+
+for loop
+----------
+
+initilization
+condition
+increment/decrement
+
+for(initilization;condition;inc/dec)
+{
+statament;
+}
+
+
+Jump Statament
+----------
+Break
+Continue
+
+
+
+
+
+
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
